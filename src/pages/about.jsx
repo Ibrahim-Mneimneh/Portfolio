@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import profile from "./../MyImages/Ibrahim's_Profile.jpg";
+import profile from "./../MyImages/Ibrahim's_Profile.png";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Socials from "../components/about/socials";

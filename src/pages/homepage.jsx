@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import profile from "./../MyImages/Ibrahim's_Profile.jpg";
+import profile from "./../MyImages/Ibrahim's_Profile.png";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
