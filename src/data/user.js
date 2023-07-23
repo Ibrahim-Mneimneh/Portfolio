@@ -25,7 +25,7 @@ const INFO = {
 	},
 
 	about: {
-		title: "I'm a 21 years old Lebanese Junior Software Engineer.",
+		title: "I'm a Lebanese Junior Software Engineer.",
 		description:
 			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Some of these projects start from as simple as a random Quote website to creating and managing an instagram-like social media. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Many of the listed projects took place months or even years before... but its never the same for me, as always getting better and better.",
 	},
