@@ -26,57 +26,40 @@ const Contact = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+					rel="stylesheet"
+				/>
 			</Helmet>
 
 			<div className="page-content">
 				<NavBar active="contact" />
 				<div className="content-wrapper">
-					<div className="contact-logo-container">
-						<div className="contact-logo"></div>
-					</div>
-
 					<div className="contact-container">
-						<div
-							className="title contact-title"
-							style={{ color: "cornflowerblue" }}
-						>
-							Let's Get in Touch: Ways to Connect with Me
-						</div>
+						<h1 className="contact-title">Connect with Me</h1>
 
-						<div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at
-							&nbsp;{" "}
+						<p className="contact-subtitle">
+							Thank you for your interest in getting in touch. I
+							welcome your feedback, questions, and suggestions.
+							Please feel free to email me directly at&nbsp;
 							<a
 								href={`mailto:${INFO.main.email}`}
-								style={{
-									textDecoration: "None",
-									color: "cornflowerblue",
-								}}
+								className="contact-email"
 							>
 								{INFO.main.email}
 							</a>
-							. I make an effort to respond to all messages within
-							24 hours, although it may take me longer during busy
-							periods. Alternatively, you can use the contact form
-							on my website to get in touch. Simply fill out the
-							required fields and I'll get back to you as soon as
-							possible. Finally, if you prefer to connect on
-							social media, you can find me on Instagram. Thanks
-							again for your interest, and I look forward to
-							hearing from you!
-						</div>
+							. I strive to respond to all messages within 24
+							hours, although it may take longer during busy
+							periods. You can also use the contact form on my
+							website or connect with me on social media. I look
+							forward to hearing from you.
+						</p>
 					</div>
 
 					<div className="socials-container">
-						<div className="contact-socials">
-							<Socials />
-						</div>
+						<Socials />
 					</div>
-
-					<div className="page-footer">
+					<div className="footer-container">
 						<Footer />
 					</div>
 				</div>

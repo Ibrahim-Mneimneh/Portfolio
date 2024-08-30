@@ -2,36 +2,50 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I am Ibrahim Mneimneh, a backend developer with expertise in Node.js. I specialize in building scalable, secure, and reliable web applications using various frameworks and technologies.",
+		keywords: [
+			"Ibrahim Mneimneh",
+			"Portfolio",
+			"Node.js developer",
+			"backend developer",
+			"web applications",
+		],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
-
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I am Ibrahim Mneimneh, a Computer Engineer with a passion for solving problems and sports. I have experience in building scalable, secure, and reliable applications using various frameworks and technologies.",
+		keywords: [
+			"Ibrahim Mneimneh",
+			"Portfolio",
+			"Computer Engineer",
+			"Full stack developer",
+		],
 	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Explore my projects in AI, Full stack development, and IoT integration. I specialize in building scalable, secure, and reliable applications using various frameworks and technologies.",
+		keywords: [
+			"Ibrahim Mneimneh",
+			"Portfolio",
+			"AI projects",
+			"IoT integration",
+		],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Reach out to Ibrahim Mneimneh if you're interested in collaborating on a project or have new ideas and opportunities. Let's connect!",
+		keywords: [
+			"Ibrahim Mneimneh",
+			"Contact",
+			"Collaboration",
+			"Opportunities",
+		],
 	},
 ];
 

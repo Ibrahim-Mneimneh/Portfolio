@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import AllProjects from "../components/projects/allProjects";
+import AllProjects from "../components/projects/AllProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -39,7 +39,7 @@ const Projects = () => {
 							className="title projects-title"
 							style={{ color: "cornflowerblue" }}
 						>
-							Projects I've worked on to Apply My Knowledge.
+							Welcome to my Project Section!
 						</div>
 
 						<div className="subtitle projects-subtitle">

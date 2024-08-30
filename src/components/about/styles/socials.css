@@ -1,36 +1,65 @@
-@import "../../../data/styles.css";
+.socials {
+    display: flex; /* Use flexbox for the main container */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    max-width: 800px; /* Set a max width for better alignment */
+    margin: auto; /* Center the component */
+    padding: 20px; /* General padding around the component */
+}
+
 .social,
 .email-wrapper {
-	display: flex;
-	padding-bottom: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin: 0 15px; /* Margin for spacing between items */
+    transition: all 0.3s ease; /* Smooth background and transform transition */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .social a,
 .email-wrapper a {
-	text-decoration: none;
+    text-decoration: none;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align icons and text vertically */
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add rounded corners */
+    color: var(--secondary-color); /* Default text color */
+}
+
+.social a:hover,
+.email-wrapper a:hover {
+    background-color: cornflowerblue; /* Hover background color */
+    color: white; /* Change text color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 .social-icon {
-	font-size: 15px;
-	color: var(--secondary-color);
+    font-size: 20px; /* Increase icon size for better visibility */
+    color: inherit; /* Use inherited color for hover effect */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .social-text {
-	color: var(--secondary-color);
-	padding-left: 30px;
-	margin-top: -20px;
-	font-weight: 600;
-	font-size: 14px;
+    color: inherit; /* Use inherited color for hover effect */
+    padding-left: 10px; /* Adjust padding for better spacing */
+    font-weight: 600;
+    font-size: 16px; /* Slightly increase font size */
+}
+
+.email {
+    display: flex; /* Ensure email is also flex */
 }
 
 .email::before {
-	content: "";
-	display: block;
-	padding-top: 20px;
-	border-top: 3px solid #f4f4f5;
-	margin-top: 20px;
+    content: "";
+    display: block;
+    padding-top: 20px;
+    border-top: 3px solid #f4f4f5;
+    margin-top: 20px;
 }
 
 .email-wrapper {
-	padding-top: 20px;
+    padding-top: 20px;
 }

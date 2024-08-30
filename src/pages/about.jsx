@@ -3,12 +3,11 @@ import { Helmet } from "react-helmet";
 import profile from "./../MyImages/Ibrahim's_Profile.png";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Socials from "../components/about/socials";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import thirdPlaceIcon from "../MyImages/icons8-third-place-48.png";
 
 const About = () => {
 	useEffect(() => {
@@ -60,16 +59,39 @@ const About = () => {
 										/>
 									</div>
 								</div>
-
-								<div className="about-socials">
-									<Socials />
-								</div>
 							</div>
 						</div>
-						<div className="about-socials-mobile">
-							<Socials />
+						<div className="about-right-side">
+							<div className="subtitle about-subtitle">
+								{INFO.about.description_2}
+							</div>
 						</div>
 					</div>
+
+					{/* Achievements Section */}
+					<div className="about-achievements">
+						<h2 className="achievements-title">Achievements</h2>
+						<ul className="achievements-list">
+							{INFO.about.achievements.map(
+								(achievement, index) => (
+									<li
+										key={index}
+										className="achievement-item"
+									>
+										<img
+											src={thirdPlaceIcon}
+											alt="Third Place Icon"
+											className="achievement-icon"
+										/>
+										<span className="achievement-text">
+											{achievement}
+										</span>
+									</li>
+								)
+							)}
+						</ul>
+					</div>
+
 					<div className="page-footer">
 						<Footer />
 					</div>
