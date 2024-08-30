@@ -115,11 +115,22 @@
 
 /* Responsive Adjustments */
 /* Adjustments for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
 	.project {
 		width: 100%;
 		height: auto;
-		padding: 15px;
+	
+	}
+	.project-description {
+		font-size: 13px;
+		height: 100px;
+		text-align: start;
+	}
+}
+@media (max-width: 768px) {
+	.project {
+		width: 100%;
+		height: auto;
 	}
 
 	.project-logo {

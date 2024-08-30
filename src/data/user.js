@@ -28,7 +28,7 @@ const INFO = {
 	},
 
 	about: {
-		title: "Hello, lets get to know each other...",
+		title: "Getting to Know Me",
 		description:
 			"I hold a Bachelor's Degree in Computer Engineering from Beirut Arab University, graduating with a GPA of 3.48/4. My academic experience has equipped me with a robust foundation in data structures, algorithms, database systems, and machine learning. I am fluent in English and Arabic, with basic proficiency in German, and thrive in diverse, fast-paced environments. In addition to my formal education, I have earned certifications in backend development, relational databases, and frontend libraries. My technical skills encompass both frontend and backend development, database management, cloud platforms, and AI tools, allowing me to tackle a wide range of projects.",
 		description_2:

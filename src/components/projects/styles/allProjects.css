@@ -2,7 +2,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	justify-content: space-between;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-left: -15px;
@@ -16,20 +15,14 @@
 	overflow: hidden;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 	.all-projects-project {
 		width: calc(100% / 2 - 20px);
 	}
 }
 
-@media (max-width: 768px) {
-	.all-projects-project {
-		width: 100%;
-		padding: 10px 0;
-	}
-}
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.all-projects-container {
 		padding-left: 0;
 		padding-right: 0;
