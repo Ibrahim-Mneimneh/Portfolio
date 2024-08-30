@@ -114,6 +114,7 @@
 }
 
 /* Responsive Adjustments */
+/* Adjustments for smaller screens */
 @media (max-width: 600px) {
 	.project {
 		width: 100%;
@@ -131,10 +132,15 @@
 
 	.project-description {
 		font-size: 13px;
-		max-height: 60px;
+		height: auto;
+		text-align: start;
 	}
 
 	.project-link {
 		font-size: 12px;
+	}
+
+	.project-technologies {
+		height: auto;
 	}
 }
