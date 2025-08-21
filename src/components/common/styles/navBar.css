@@ -1,74 +1,87 @@
 @import "../../../data/styles.css";
 
-.nav-container {
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .navbar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
 	position: fixed;
 	top: 3vh;
 	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .nav-background {
-	width: 380px;
-	height: 40px;
-	padding-left: 0%;
-	padding-right: 0%;
+	display: inline-flex;
+	align-items: center;
+	height: 45px;
+	padding: 0 30px;
 	background: #fff;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-	border-radius: 40px;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	transition: all 0.4s ease-in-out;
 }
 
 .nav-list {
 	display: flex;
-	justify-content: space-between;
-	list-style: none;
 	align-items: center;
-	margin-left: -16px;
-	margin-right: 20px;
-	margin-top: 11px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 40px;
 }
 
 .nav-item {
 	font-weight: bold;
-	font-size: 80%;
-}
-
-.nav-item.active a {
-	color: var(--link-color) !important;
 }
 
 .nav-item a {
 	text-decoration: none;
 	color: var(--primary-color);
-}
-
-.nav-item a:hover {
-	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 600px) {
-	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
-	}
+.nav-item.active a,
+.nav-item a:hover {
+	color: var(--link-color);
+}
 
+.logo-profile {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+	margin-right: 20px;
+	transition: width 0.4s ease, margin-right 0.4s ease, opacity 0.4s ease;
+}
+
+.logo-profile.hidden {
+	width: 0;
+	margin-right: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+
+@media (max-width: 728px) {
 	.nav-background {
-		width: 80%;
 		height: 40px;
+		padding: 0 20px;
 	}
 
-	.nav-item {
-		font-weight: bold;
+	.nav-list {
+		gap: 25px;
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.nav-background {
+		height: 40px;
+		padding: 0 20px;
+	}
+
+	.nav-list {
+		gap: 20px;
+		font-size: 0.9rem;
 	}
 }

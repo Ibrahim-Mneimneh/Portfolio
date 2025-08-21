@@ -1,33 +1,122 @@
-.projects-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 50px;
-}
-
-.projects-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
-	z-index: 999;
-}
-
 .projects-container {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
+	gap: 10px;
+	margin-top: 45px;
+	align-items: center;
+
 }
 
-@media (max-width: 600px) {
-	.projects-container {
-		padding-top: 60px;
-	}
+.projects-hero {
+	text-align: center;
+	background: linear-gradient(135deg, #e0f7ff, #d0e8ff);
+	border-radius: 30px;
+	margin: 80px auto 0% auto;
+	padding: 80px 5%;
+	max-width: 900px;
+	overflow: hidden;
+	animation: fadeInUp 1s ease-out forwards;
+}
 
-	.projects-project {
-		width: calc(100% / 2);
+.projects-title {
+	font-size: 3rem;
+	font-weight: 700;
+	background: linear-gradient(90deg, var(--primary-color), #2a6fdb);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	animation: fadeInUp 1s ease-out forwards;
+}
+
+.projects-subtitle {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	color: var(--secondary-color);
+	font-weight: 600;
+	max-width: 800px;
+	margin: 0 auto;
+	animation: fadeInUp 1s ease-out forwards;
+	animation-delay: 0.3s;
+	opacity: 0;
+}
+
+.projects-hero-blob {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(45deg, #43aaff, #a2cffc);
+	border-radius: 50%;
+	animation: morph 10s ease-in-out infinite;
+	opacity: 0.3;
+	z-index: 0;
+}
+
+.projects-list {
+	width: 100%;
+	border: 1px solid #0e1f39;
+	border-radius: 5rem;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes morph {
+	0% {
+		border-radius: 65% 35% 45% 70% / 55% 60% 40% 65%;
+	}
+	25% {
+		border-radius: 40% 60% 70% 30% / 60% 40% 55% 45%;
+	}
+	50% {
+		border-radius: 75% 25% 35% 65% / 45% 70% 30% 55%;
+	}
+	75% {
+		border-radius: 55% 45% 60% 40% / 60% 50% 40% 55%;
+	}
+	100% {
+		border-radius: 65% 35% 45% 70% / 55% 60% 40% 65%;
+	}
+}
+
+@media (max-width: 768px) {
+	.projects-title {
+		font-size: 2.5rem;
+	}
+	.projects-subtitle {
+		font-size: 1rem;
+		max-width: 100%;
+	}
+	.projects-hero {
+		padding: 50px 8%;
+		border-radius: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.projects-title {
+		font-size: 2rem;
+	}
+	.projects-subtitle {
+		font-size: 0.95rem;
+		line-height: 1.4;
+	}
+	.projects-hero {
+		padding: 40px 6%;
+	}
+	.projects-hero-blob {
+		width: 200px;
+		height: 200px;
+		top: -30px;
+		right: -30px;
 	}
 }

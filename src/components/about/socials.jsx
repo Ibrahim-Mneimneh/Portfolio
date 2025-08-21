@@ -1,21 +1,18 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-	faGithub,
-	faLinkedin,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import INFO from "../../data/user";
 import "./styles/socials.css";
-
+import {
+	FaGithub,
+	FaInstagram,
+	FaEnvelope,
+	FaLinkedinIn,
+} from "react-icons/fa";
 const Socials = () => {
 	return (
 		<div className="socials">
 			<div className="social">
 				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
 					<div className="social-icon">
-						<FontAwesomeIcon icon={faGithub} />
+						<FaGithub></FaGithub>
 					</div>
 					<div className="social-text">Follow on GitHub</div>
 				</a>
@@ -28,7 +25,7 @@ const Socials = () => {
 					rel="noreferrer"
 				>
 					<div className="social-icon">
-						<FontAwesomeIcon icon={faLinkedin} />
+						<FaLinkedinIn></FaLinkedinIn>
 					</div>
 					<div className="social-text">Follow on LinkedIn</div>
 				</a>
@@ -41,7 +38,7 @@ const Socials = () => {
 					rel="noreferrer"
 				>
 					<div className="social-icon">
-						<FontAwesomeIcon icon={faInstagram} />
+						<FaInstagram></FaInstagram>
 					</div>
 					<div className="social-text">Follow on Instagram</div>
 				</a>
@@ -55,7 +52,7 @@ const Socials = () => {
 						rel="noreferrer"
 					>
 						<div className="social-icon">
-							<FontAwesomeIcon icon={faEnvelope} />
+							<FaEnvelope></FaEnvelope>
 						</div>
 						<div className="social-text">{INFO.main.email}</div>
 					</a>

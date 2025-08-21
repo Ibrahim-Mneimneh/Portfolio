@@ -36,30 +36,24 @@ const Contact = () => {
 				<NavBar active="contact" />
 				<div className="content-wrapper">
 					<div className="contact-container">
-						<h1 className="contact-title">Connect with Me</h1>
+						<h1 className="contact-title">{INFO.contact.title}</h1>
 
 						<p className="contact-subtitle">
-							Thank you for your interest in getting in touch. I
-							welcome your feedback, questions, and suggestions.
-							Please feel free to email me directly at&nbsp;
+							{INFO.contact.description1}&nbsp;
 							<a
 								href={`mailto:${INFO.main.email}`}
 								className="contact-email"
 							>
 								{INFO.main.email}
 							</a>
-							. I strive to respond to all messages within 24
-							hours, although it may take longer during busy
-							periods. You can also use the contact form on my
-							website or connect with me on social media. I look
-							forward to hearing from you.
+							{INFO.contact.description2}
 						</p>
 					</div>
 
 					<div className="socials-container">
 						<Socials />
 					</div>
-					<div className="footer-container">
+					<div className="page-footer">
 						<Footer />
 					</div>
 				</div>

@@ -5,4 +5,4 @@ This is my personal portfolio website built using React. The app showcases my pr
 ### How to run 
 - Open terminal on the root folder
 - Run ```npm install```
-- Run ```npm start``` and the webpage should open
+- Run ```npm run dev``` and the webpage should open

@@ -1,0 +1,194 @@
+.experienceSection {
+	padding: 25px 40px 25px 40px;
+	margin: 20px 0;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transition: padding 0.3s ease, margin 0.3s ease;
+}
+
+.experienceContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.experienceCard {
+	background-color: white;
+	border-radius: 16px;
+	padding: 30px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	border: 1px solid #f0f0f0;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, padding 0.3s ease;
+}
+
+.experienceHeader {
+	margin-bottom: 20px;
+}
+
+.experienceLeft {
+	margin-bottom: 15px;
+}
+
+.roleHeader {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 8px;
+}
+
+.roleIcon {
+	color: #6495ed;
+	font-size: 28px;
+}
+
+.roleTitle {
+	font-size: 27px;
+	font-weight: 600;
+	color: #2c3e50;
+	margin: 0;
+}
+
+.companyName {
+	font-size: 1.1rem;
+	color: #6495ed;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+
+.experienceMeta {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.metaItem {
+	display: flex;
+	align-items: center;
+	color: #2c3e50;
+	font-size: 0.9rem;
+	gap: 4px;
+}
+
+.experienceDescription {
+	line-height: 1.6;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #a89d9d;
+	font-weight: 500;
+}
+
+.technologiesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.techBadge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background-color: #f8f9fa;
+	color: #6495ed;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 0.85rem;
+	font-weight: 500;
+	border: 1px solid #e9ecef;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+.techBadge:hover {
+	transform: translateY(-4px) scale(1.02);
+	box-shadow: 0 12px 32px rgba(100, 149, 237, 0.15);
+	border-color: rgba(100, 149, 237, 0.2);
+	background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+	color: #6495ed;
+}
+
+.techBadgeIcon {
+	font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+	.experienceSection {
+		padding: 30px;
+		margin: 30px 0;
+	}
+	.experienceCard {
+		padding: 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	.experienceSection {
+		padding: 20px;
+		margin: 20px 0;
+	}
+
+	.experienceCard {
+		padding: 20px;
+	}
+
+	.roleTitle {
+		font-size: 1.1rem;
+	}
+
+	.companyName {
+		font-size: 1rem;
+	}
+
+	.experienceDescription {
+		font-size: 1rem;
+	}
+
+	.techBadge {
+		padding: 5px 10px;
+		font-size: 0.8rem;
+	}
+
+	.techBadgeIcon {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.experienceContainer {
+		gap: 20px;
+	}
+
+	.experienceCard {
+		padding: 15px;
+	}
+
+	.experienceMeta {
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.roleHeader {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.roleIcon {
+		color: #6495ed;
+		font-size: 22px;
+	}
+
+	.technologiesContainer {
+		justify-content: flex-start;
+		gap: 8px;
+	}
+
+	.techBadge {
+		font-size: 0.75rem;
+		padding: 4px 8px;
+		white-space: normal;
+	}
+
+	.techBadgeIcon {
+		font-size: 11px;
+	}
+}

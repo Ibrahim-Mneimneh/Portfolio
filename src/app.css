@@ -65,7 +65,17 @@
 	margin-top: 25px;
 }
 
+.section-title {
+	text-align: center;
+	color: cornflowerblue;
+	font-size: 35px;
+}
+
 .page-footer {
+	margin-top: 40px;
+	text-align: center;
+	padding: 20px;
+	color: white;
 	position: block;
 }
 
@@ -75,6 +85,9 @@
 	left: 0;
 	right: 0;
 	border-top: 2px solid var(--tertiary-color);
+}
+.hidden {
+	display: none;
 }
 
 @media (max-width: 1270px) {

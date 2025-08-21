@@ -2,144 +2,17 @@
 
 /* General Page Styles */
 .page-content {
-	background-color: #f9f9f9; /* Light background for the entire page */
-	margin: 0;
+	background-color: #f9f9f9;
 	padding: 0;
 }
 
-/* Homepage Container */
 .homepage-container {
-	padding-top: 45px;
-}
-
-/* Hero Section Styles */
-.homepage-first-area {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 40px 0;
-}
-
-.homepage-first-area-left-side {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	gap: 30px;
+	margin-top: 45px;
 }
 
-.homepage-title {
-	width: 85% !important;
-}
-
-.homepage-subtitle {
-	width: 85% !important;
-}
-
-.homepage-first-area-right-side {
-	display: flex;
-	align-items: center;
-}
-
-.homepage-image-container {
-	width: 370px;
-	height: 370px;
-}
-
-.homepage-image-wrapper {
-	overflow: hidden;
-	border-radius: 10%;
-}
-
-.homepage-image-wrapper img {
-	width: 100%;
-}
-
-/* Skills Section Styles */
-.homepage-skills {
-	margin-top: 40px;
-	padding: 20px; /* Add padding to separate from other sections */
-	background-color: #ffffff; /* Background color for contrast */
-	border-radius: 10px; /* Rounded corners for the skills section */
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.skills-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-.skill-item {
-	background: #f0f8ff;
-	border-radius: 10px;
-	padding: 15px 20px;
-	margin: 10px;
-	display: flex;
-	align-items: center;
-	opacity: 0; /* Start hidden */
-	transform: translateY(20px); /* Initial position */
-	animation: fadeInUp 0.5s forwards; /* Apply animation */
-	transition: transform 0.3s ease; /* For hover effect */
-}
-
-/* Add animation delay for staggered effect */
-.skill-item:nth-child(1) {
-	animation-delay: 0.1s;
-}
-.skill-item:nth-child(2) {
-	animation-delay: 0.2s;
-}
-.skill-item:nth-child(3) {
-	animation-delay: 0.3s;
-}
-.skill-item:nth-child(4) {
-	animation-delay: 0.4s;
-}
-.skill-item:nth-child(5) {
-	animation-delay: 0.5s;
-}
-.skill-item:nth-child(6) {
-	animation-delay: 0.6s;
-}
-.skill-item:nth-child(7) {
-	animation-delay: 0.1s;
-}
-.skill-item:nth-child(8) {
-	animation-delay: 0.2s;
-}
-.skill-item:nth-child(9) {
-	animation-delay: 0.3s;
-}
-.skill-item:nth-child(10) {
-	animation-delay: 0.4s;
-}
-.skill-item:nth-child(11) {
-	animation-delay: 0.5s;
-}
-.skill-item:nth-child(12) {
-	animation-delay: 0.6s;
-}
-.skill-item:hover {
-	transform: scale(1.05);
-}
-
-.skill-icon {
-	font-size: 30px;
-	color: #6495ed; /* Use a consistent color for icons */
-	margin-right: 10px;
-}
-
-.skill-label {
-	font-size: 18px;
-	color: #333; /* Darker color for better readability */
-}
-
-.section-title {
-	text-align: center; /* Center align the title */
-	color: cornflowerblue; /* Darker color for better readability */
-}
-
-/* Animation Keyframes */
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
@@ -151,104 +24,7 @@
 	}
 }
 
-/* Social Media Icons */
-.homepage-socials {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-top: 30px;
-}
-
-.homepage-social-icon {
-	padding-right: 20px;
-	font-size: 25px;
-	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-	color: var(--secondary-color);
-}
-
-/* Add a hover effect */
-.homepage-social-icon:hover {
-	color: cornflowerblue; /* Change to a nice hover color */
-	transform: scale(1.2) rotate(15deg); /* Scale and rotate on hover */
-}
-
-/* Optional: Additional styles for better visibility */
-.homepage-social-icon svg {
-	fill: currentColor; /* Ensures the icon takes the color of the text */
-}
-
-/* Projects, Articles, and Works Sections */
-.homepage-after-title {
-	display: flex;
-}
-
-.homepage-projects {
-	flex-basis: 300px;
-	padding-top: 40px;
-}
-
-.homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
-}
-
-.homepage-article {
-	padding-bottom: 5px;
-}
-
-.homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
-}
-
-/* Footer Styles */
-.page-footer {
-	margin-top: 40px;
-	text-align: center;
-	padding: 20px;
-	color: white; /* White text color in footer */
-}
-
-/* Responsive Styles */
 @media (max-width: 1024px) {
-	.homepage-first-area {
-		flex-direction: column;
-	}
-
-	.homepage-first-area-left-side {
-		display: flex;
-		flex-direction: column; /* Set direction to column */
-		align-items: flex-start;
-		width: 100%;
-		order: 2;
-	}
-
-	.homepage-title {
-		width: 100% !important;
-		margin-top: 20px;
-		order: 2;
-	}
-
-	.homepage-subtitle {
-		width: 100% !important;
-		margin-top: 10px;
-		order: 3;
-	}
-
-	.homepage-first-area-right-side {
-		width: 100%;
-		order: 1;
-		justify-content: center;
-	}
-
-	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
-		order: 1;
-	}
-
 	.homepage-after-title {
 		flex-direction: column;
 	}
