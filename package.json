@@ -7,6 +7,9 @@
 		"email": "ib79mneimneh@gmail.com",
 		"url": "https://ibrahim-mneimneh-portfolio.onrender.com/"
 	},
+  "engines": {
+    "node": "v20.17.0"
+  },
   "type": "module",
 	"license": "MIT",
 	"private": true,
